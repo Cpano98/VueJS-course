@@ -55,3 +55,24 @@ export default {
 </style>
 
 ```
+
+#### Sumatorias
+
+```
+this.counter += 1   es igual    this.counter++ o this.counter--
+```
+
+
+## Props:
+
+### Manera 1:
+    props: ["TituloLibro", "start"]
+
+### Manera 2:
+
+```
+ props: {
+    TituloLibro: String,
+    start: Number
+  },
+```
