@@ -76,3 +76,18 @@ this.counter += 1   es igual    this.counter++ o this.counter--
     start: Number
   },
 ```
+
+# SASS
+
+Instalar dependencias de desarrollo para uso de SASS.
+
+```
+yarn add -D sass-loader@10 sass
+yarn add bootstrap
+```
+
+
+En main.js:
+  import './styles/styles.scss'
+
+Se creó la carpeta de "styles" -- > "styles.scss".
