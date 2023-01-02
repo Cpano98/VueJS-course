@@ -91,3 +91,9 @@ En main.js:
   import './styles/styles.scss'
 
 Se creó la carpeta de "styles" -- > "styles.scss".
+
+# GIT
+
+Crear TAG en Git: 
+
+  git tag -a v1.0.0 -m "Vuex conf"
