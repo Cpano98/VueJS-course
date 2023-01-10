@@ -1,17 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-
+  <div>
+    <Navbar />
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
+import { defineAsyncComponent } from 'vue'
 
 export default {
-  name: 'App',
-  components: {
-  }
-}
+  name: "App",
+  components: { 
+    Navbar:  defineAsyncComponent(() => import(/* webpackChunkName: "NavBar" */ '@/modules/shared/components/Navbar.vue'))
+   },
+};
 </script>
-
+  
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
